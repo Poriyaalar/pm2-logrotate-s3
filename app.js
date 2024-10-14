@@ -7,7 +7,7 @@ const scheduler = require("node-schedule");
 const zlib = require("zlib");
 const deepExtend = require("deep-extend");
 const publicIp = require("public-ip");
-const { S3Client } = require("@aws-sdk/client-s3");
+const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
 
 var conf = pmx.initModule({
   widget: {
