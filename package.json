@@ -1,9 +1,10 @@
 {
-  "name": "pm2-logrotate-s3",
+  "name": "@poriyaalar/pm2-logrotate-s3",
   "version": "3.0.3",
   "description": "Module to rotate logs of every pm2 application and also upload to s3",
   "main": "app.js",
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.670.0",
     "deep-extend": "^0.6.0",
     "graceful-fs": "^4.2.6",
     "moment-timezone": "^0.5.27",
@@ -27,7 +28,7 @@
   "license": "MIT",
   "apps": [
     {
-      "name": "pm2-logrotate-s3",
+      "name": "poriyaalar-pm2-logrotate-s3",
       "script": "app.js",
       "max_memory_restart": "500M"
     }
